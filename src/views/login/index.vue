@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useStore } from "../../store/index.ts";
+import {
+  HomeOutlined,
+  SettingFilled,
+  SmileOutlined,
+  SyncOutlined,
+  LoadingOutlined,
+} from "@ant-design/icons-vue";
 const store = useStore();
 const str = ref("hello, This is login page");
 
@@ -18,6 +25,14 @@ function reset(): void {
 </script>
 <template>
   <div class="content">
+    <a-space>
+      <home-outlined />
+      <setting-filled />
+      <smile-outlined />
+      <sync-outlined spin />
+      <smile-outlined :rotate="180" />
+      <loading-outlined />
+    </a-space>
     {{ str }}计数{{ store.count }} name:{{ store.name }}
     <a-button type="primary" @click="add">添加</a-button>
     <a-button type="primary" @click="change">便便</a-button>
