@@ -12,22 +12,22 @@ const store = useStore();
 const str = ref("hello, This is login page");
 
 function add(): void {
-  store.increment();
-}
+  store.increment();  
+} 
 
 function change(): void {
   store.change();
 }
 
-function reset(): void {
-  store.$reset();
-}
+function reset():  void {
+  store.$reset(); 
+} 
 </script>
 <template>
   <div class="content">
     <a-space>
-      <home-outlined />
-      <setting-filled />
+      <home-outlined /> 
+      <setting-filled /> 
       <smile-outlined />
       <sync-outlined spin />
       <smile-outlined :rotate="180" />

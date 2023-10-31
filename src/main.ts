@@ -11,6 +11,5 @@ import 'ant-design-vue/dist/antd.css';
 
 const app = createApp(App);
 const pinia = createPinia();
-app.use(Antd).use(router).use(pinia).mount('#app'); 
+app.use(Antd).use(router).use(pinia).mount('#app');
 
-  
