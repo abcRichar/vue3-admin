@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { useStore } from "../../store/index.ts";
-import {
-  HomeOutlined,
-  SettingFilled,
-  SmileOutlined,
-  SyncOutlined,
-  LoadingOutlined,
+  import { ref } from "vue";
+  import { useStore } from "../../store/index";
+  import {
+HomeOutlined,
+SettingFilled,
+SmileOutlined,
+SyncOutlined,
+LoadingOutlined,
 } from "@ant-design/icons-vue";
 const store = useStore();
 const str = ref("hello, This is login page");
 
 function add(): void {
-  store.increment();  
+    store.increment();   
 } 
 
 function change(): void {
@@ -26,8 +26,8 @@ function reset():  void {
 <template>
   <div class="content">
     <a-space>
-      <home-outlined /> 
-      <setting-filled /> 
+      <HomeOutlined />
+      <setting-filled />
       <smile-outlined />
       <sync-outlined spin />
       <smile-outlined :rotate="180" />
