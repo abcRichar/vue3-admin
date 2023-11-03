@@ -1,27 +1,21 @@
 <script setup lang="ts">
-  import { ref } from "vue";
-  import { useStore } from "../../store/index";
-  import {
-HomeOutlined,
-SettingFilled,
-SmileOutlined,
-SyncOutlined,
-LoadingOutlined,
-} from "@ant-design/icons-vue";
-const store = useStore();
-const str = ref("hello, This is login page");
+import { ref } from 'vue'
+import { useStore } from '../../store/index'
+import { HomeOutlined, SettingFilled, SmileOutlined, SyncOutlined, LoadingOutlined } from '@ant-design/icons-vue'
+const store = useStore()
+const str = ref('hello, This is login page')
 
 function add(): void {
-    store.increment();   
-} 
-
-function change(): void {
-  store.change();
+  store.increment()
 }
 
-function reset():  void {
-  store.$reset(); 
-} 
+function change(): void {
+  store.change()
+}
+
+function reset(): void {
+  store.$reset()
+}
 </script>
 <template>
   <div class="content">
